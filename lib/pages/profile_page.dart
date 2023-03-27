@@ -10,14 +10,14 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Profile'),
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.deepPurple.shade300,
       ),
       body: Column(
         children: [
           const SizedBox(height: constVal40,),
           const CircleAvatar(
-            backgroundImage: AssetImage('assets/images/web.png'),
-            radius: 60,
+            backgroundImage: AssetImage('assets/images/cactus.png'),
+            radius: 70,
           ),
           const SizedBox(
             height: constVal20,

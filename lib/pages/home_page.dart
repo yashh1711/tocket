@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Tocket'),
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.deepPurple.shade300,
       ),
       body: SingleChildScrollView(
         child: Column(
