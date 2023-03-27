@@ -20,7 +20,16 @@ class _DescriptionPageState extends State<DescriptionPage> {
         title: Text(widget.box.title),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text('This is a SnackBar'),
+                  backgroundColor: Colors.deepPurple,
+                  behavior: SnackBarBehavior.floating,
+                  duration: Duration(seconds: 2),
+                ),
+              );
+            },
             icon: const Icon(
               Icons.info,
             ),
